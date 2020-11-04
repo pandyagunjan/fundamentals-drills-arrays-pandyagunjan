@@ -42,7 +42,7 @@ public class TestMultiplication {
         short multiplier = 1;
         short expectedShort = 2;
         // : When
-        short actualShort = mathUtils.multiply(multiplicand, multiplier);
+        short actualShort = (short) mathUtils.multiply(multiplicand, multiplier);
         // : Then
         assertEquals(expectedShort, actualShort);
     }
