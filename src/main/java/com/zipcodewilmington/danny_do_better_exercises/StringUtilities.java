@@ -34,7 +34,7 @@ public class StringUtilities {
      * @return the first 3 characters of `input`
      */
     public static String getPrefix(String input){
-        return null;
+        return input.substring(0,3);
     }
 
     /**
@@ -42,7 +42,7 @@ public class StringUtilities {
      * @return the last 3 characters of `input`
      */
     public static String getSuffix(String input){
-        return null;
+        return input.substring(input.length(),3);
     }
 
     /**
@@ -51,7 +51,7 @@ public class StringUtilities {
      * @return the equivalence of two strings, `inputValue` and `comparableValue`
      */
     public static Boolean compareTwoStrings(String inputValue, String comparableValue){
-        return null;
+        return inputValue.equals(comparableValue);
     }
 
     /**
@@ -59,6 +59,10 @@ public class StringUtilities {
      * @return the middle character of `inputValue`
      */
     public static Character getMiddleCharacter(String inputValue){
+
+
+
+
         return null;
     }
 
@@ -67,7 +71,10 @@ public class StringUtilities {
      * @return the first sequence of characters
      */
     public static String getFirstWord(String spaceDelimitedString){
-        return null;
+
+        String[] result=spaceDelimitedString.split(" ");
+
+        return result[0];
     }
 
     /**
