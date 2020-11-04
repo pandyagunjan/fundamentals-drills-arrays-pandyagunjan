@@ -42,7 +42,7 @@ public class StringUtilities {
      * @return the last 3 characters of `input`
      */
     public static String getSuffix(String input){
-        return input.substring(input.length(),3);
+        return input.substring(input.length()-3);
     }
 
     /**
@@ -58,12 +58,22 @@ public class StringUtilities {
      * @param inputValue the value input from user
      * @return the middle character of `inputValue`
      */
-    public static Character getMiddleCharacter(String inputValue){
+    public static String getMiddleCharacter(String inputValue){
 
+        int position =0;
 
+        if (inputValue.length() % 2 == 0)
+        {
+            position = inputValue.length() / 2 - 1;
 
+        }
+        else
+        {
+            position = inputValue.length() / 2;
 
-        return null;
+        }
+
+        return inputValue.substring(position,position+1);
     }
 
     /**
